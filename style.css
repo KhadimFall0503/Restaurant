@@ -8,8 +8,16 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
 }
-.navbar-brand{
+.fa .navbar-brand{
     font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2px;
+}
+.fa{
+    font-size: 25px;
+    color:#28a745 ;
+    font-weight: 600;
+    
 }
 .nav-link{
     font-weight: 600;
@@ -37,10 +45,12 @@ h1{
 }
 h2{
     font-weight: 600;
+    font-size: 1.6rem;
 }
 hr {
     background-color: #28a745;
     height: 2px;
+    
 }
 .sal{
     border-radius: 50px;
@@ -70,7 +80,7 @@ h4{
     background-color: #CCD1D9;
     width: 100%;
     padding: 20px;
-    height: auto;
+    height: 80vh;
 }
 .bo{
     color: #28a745;
