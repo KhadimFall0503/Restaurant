@@ -7,6 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 .fa .navbar-brand{
     font-weight: 600;
@@ -28,10 +29,13 @@ body {
     color: white;
     
 }
+.ln{
+    height: auto;
+}
 
 
 .custom-img{
-    width: 100%;
+    width: 500px;
     max-width: 600px;
 }
 h1{
@@ -43,9 +47,16 @@ h1{
     width: 400px;
     
 }
+.menu{
+    font-size: 1.7rem;
+    color: white;
+}
+.yes{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
 h2{
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 hr {
     background-color: #28a745;
@@ -72,15 +83,32 @@ h4{
 }
 .e{
     font-weight: 600;
+    font-size: 1.2rem;
 }
 .re{
     font-size: 0.8rem;
 }
+
 .fond{
-    background-color: #CCD1D9;
+    background: url('/image/restau.jpg') no-repeat center center fixed;
+    background-size: cover;
     width: 100%;
     padding: 20px;
-    height: 80vh;
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+   
+}
+.fond::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0.8;
 }
 .bo{
     color: #28a745;
