@@ -100,7 +100,7 @@ h4{
 }
 
 .fond{
-    background: url('/image/restau.jpg') no-repeat center center fixed;
+    background: url('image/restau.jpg') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     padding: 20px;
