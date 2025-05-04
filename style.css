@@ -25,6 +25,7 @@ body {
     height: 200px; /* Ajuster la hauteur */
     object-fit: cover; /* Éviter la déformation */
 }
+
 .plats{
     padding-left: 10%;
     padding-right: 10%;
@@ -141,7 +142,7 @@ h4{
     margin-top: 45px;
 }
 .dfl{
-    border-radius: 10px;
+    border-radius: 25px;
     width: 450px;
 }
 .card:hover {
