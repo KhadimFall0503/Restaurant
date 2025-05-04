@@ -162,3 +162,12 @@ textarea{
     width: 100%;
     height: 100px;
 }
+@media (max-width: 768px) { /* Ajuste la taille si besoin */
+    .navbar-toggler {
+        background-color: #28a745 !important; /* Change la couleur du fond */
+        border-radius: 8px; /* Ajoute un arrondi si souhaité */
+    }
+    .navbar-toggler-icon {
+        filter: invert(1); /* Change la couleur de l'icône */
+    }
+}
