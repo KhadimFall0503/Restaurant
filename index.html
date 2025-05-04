@@ -12,30 +12,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg p-4 w-100">
-           <li class="fas fa-utensils fa "> <a href="#" class="navbar-brand text-success">RESTAURANT</a></li>
-            
-            <!-- Bouton de collapse -->
-            <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+        <div class="container">
+            <a class="navbar-brand text-success fw-bold fs-3" href="#">
+                <i class="fas fa-utensils"></i> Restaurant
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-    
-            <!-- Contenu de la navigation -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav nav-pills d-flex justify-content-center mx-auto pt-2">
-                    <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="#delices" class="nav-link">Délices</a></li>
-                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="#chef" class="nav-link">Chef</a></li>
-                    <li class="nav-item"><a href="#gallery" class="nav-link">Galerie</a></li>
-                    <li class="nav-item"><a href="#propos" class="nav-link">À propos</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#delices">Délices</a></li>
+                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#chef">Chef</a></li>
+                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#gallery">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#propos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#contact">Contact</a></li>
                 </ul>
-                <button type="button" class="btn btn-success btn-md ms-auto" #table>Réserver Table</button>
+                <button class="btn btn-success px-4 py-2 rounded-pill">Réserver Table</button>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     
     <section class="heros" style="height:70vh;">
         <div class="fond d-flex justify-content-center align-items-center text-center">
@@ -48,13 +46,13 @@
         <section class="about pt-3 " id="about" data-aos="fade-up">
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center pt-5">
-                    <div class="col-md-6">
-                        <h2>A PROPOS</h2>
-                        <p>Bienvenue dans notre restaurant, où saveurs authentiques et ambiance conviviale se rencontrent. Découvrez notre menu élaboré avec des ingrédients frais et laissez-vous tenter par une expérience culinaire unique. Réservez votre table dès maintenant et savourez des plats qui éveillent les sens !
-                            Profitez également de nos spécialités maison, conçues pour ravir les palais les plus exigeants. Que ce soit pour un dîner intime ou un repas entre amis, nous vous accueillons avec chaleur et passion.
-                            </p>
+                    <div class="col-md-7">
+                        <h2 class="text-uppercase">à propos</h2>
+                        <p>Bienvenue! Plongez dans un univers où la gastronomie se marie à l’élégance. Ici, chaque plat est une œuvre d'art, chaque saveur une invitation au voyage. Notre chef, avec son talent inégalé, sélectionne avec soin les ingrédients les plus frais pour vous offrir une expérience culinaire inoubliable. Que ce soit pour un dîner romantique, une sortie en famille ou un déjeuner d'affaires, Ce restaurant s'engage à rendre chaque moment unique. Venez découvrir notre menu exquis et laissez-vous emporter par une symphonie de goûts et de parfums.
+                        </p>
+                        <button class="btn btn-success d-block btn-md" type="button">En Savoir Plus</button>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <img src="/image/restaurant.webp" alt="Restaurant" class="img-fluid dfl">
                     </div>
                 </div>
@@ -64,7 +62,7 @@
         <section id="delices" class="delices pt-3 " data-aos="fade-up">
             <div class="container">
                 <div class="text-center">
-                    <h2 >DELICES</h2>
+                    <h2 class="text-center text-uppercase" >Délices</h2>
                     <hr>
                 </div>
             </div>
@@ -75,7 +73,7 @@
                     <div class="row d-flex justify-content-center align-items-center g-3">
                         <div class="col-12 col-md-4">
                             <div class="card position-relative">
-                                <img src="/image/pizza.jpg" class="card-img-top" alt="Image du plat">
+                                <img src="/image/pizza.jpg" class="card-img-top ee" alt="Image du plat">
                                 <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
                                     25000 FCFA
                                 </span>
@@ -88,12 +86,12 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="card position-relative">
-                                <img src="/image/brochette.jpg" class="card-img-top" alt="Image du plat">
+                                <img src="/image/brochette.jpg" class="card-img-top ee" alt="Image du plat">
                                 <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
                                     25000 FCFA
                                 </span>
                                 <div class="card-body">
-                                    <h5 class="card-title">Brochette de poulet</h5>
+                                    <h5 class="card-title text-sm">Brochette poulet</h5>
                                     <p class="card-text">Déguster avec saveur collectivement.</p>
                                     <a href="#" class="btn btn-success">Commander</a>
                                 </div>
@@ -101,7 +99,7 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="card position-relative">
-                                <img src="/image/poulet.jpg" class="card-img-top" alt="Image du plat">
+                                <img src="/image/poulet.jpg" class="card-img-top ee" alt="Image du plat">
                                 <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
                                     25000 FCFA
                                 </span>
@@ -112,73 +110,96 @@
                                 </div>
                             </div>
                         </div>
+                        <h2 class="text-center text-uppercase pt-5">Les Mieux Notés</h2>
+                        <hr>
+                        <div class="row d-flex justify-content-center align-items-center g-3 flex-wrap">
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative">
+                                    <img src="/image/poulet.jpg" class="card-img-top ee" alt="Image du plat">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
+                                        25000 FCFA
+                                    </span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza</h5>
+                                        <p class="card-text">Idéal pour un groupe de personners.</p>
+                                        <a href="#" class="btn btn-success">Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative">
+                                    <img src="/image/brochette.jpg" class="card-img-top ee" alt="Image du plat">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
+                                        25000 FCFA
+                                    </span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza</h5>
+                                        <p class="card-text">Idéal pour un groupe de personners.</p>
+                                        <a href="#" class="btn btn-success">Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative">
+                                    <img src="/image/pizza.jpg" class="card-img-top ee" alt="Image du plat">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
+                                        25000 FCFA
+                                    </span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza</h5>
+                                        <p class="card-text">Idéal pour un groupe de personners.</p>
+                                        <a href="#" class="btn btn-success">Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative">
+                                    <img src="/image/burger.jpg" class="card-img-top ee" alt="Image du plat">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
+                                        25000 FCFA
+                                    </span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Burger</h5>
+                                        <p class="card-text">Idéal pour un groupe de personners.</p>
+                                        <a href="#" class="btn btn-success">Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative">
+                                    <img src="/image/Riz.jpg" class="card-img-top ee" alt="Image du plat">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
+                                        25000 FCFA
+                                    </span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Riz et Crevettes</h5>
+                                        <p class="card-text">Idéal pour un groupe de personners.</p>
+                                        <a href="#" class="btn btn-success">Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative">
+                                    <img src="/image/Chawarma.jpg" class="card-img-top ee" alt="Image du plat">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark p-2 my-2 mx-2 rounded">
+                                        25000 FCFA
+                                    </span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chawarma</h5>
+                                        <p class="card-text">Idéal pour un groupe de personners.</p>
+                                        <a href="#" class="btn btn-success">Commander</a>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </section>
+            
            </div>
         </section>
-        <section class="text-center pt-5" id="menu" data-aos="fade-up">
-            <div class="container">
-                <div class="fond">
-                    <h2 class="menu">MENU</h2>
-                    <hr>
-                    <div class="row  d-flex justify-content-between">
-                        <div class="col-sm-6 col-md-2">
-                                <img src="/image/salad.png" class="img-fluid  rond" width=80px height="20px" alt="">
-                                <h3 class="text-s e mb-1">Salade Grecque</h3>
-                                <span class="re">Lorem ipsum sit amet consectetur adipiscing</span> 
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/caesar.png" class="img-fluid  rond mt-3" width=60px height="20px" alt="">
-                                <p class="text-success e mb-2">Salade César</p>  <span class="re">Lorem ipsum sit amet consectetur adipiscing</span>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/steaks vagitable.png" class="img-fluid rond " width=80px height="20px" alt="">
-                                <p class="text-success e mb-2 ">Sreak Légumes</p>  <p class="re">Lorem ipsum sit amet consectetur adipiscing</p>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/bread-barrel.png" class="img-fluid fo rond mt-3 " width=60px height="20px" alt="">
-                                <p class="text-success e">Baril de pain</p>  <p class="re">Lorem ipsum sit amet consectetur adipiscing</p>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/chicken chow.png" class="img-fluid rond" width=80px height="20px" alt="">
-                                <p class="text-success e ">Chow de poulet</p>  <p class="re">Lorem ipsum sit amet consectetur adipiscing</p>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/cake.png" class="img-fluid fo rond mt-2 " width=65px height="20px" alt="">
-                                <p class="text-success e">Cake</p>  <p class="re">Lorem ipsum sit amet consectetur adipiscing</p>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/pasta.png" class="img-fluid rond" width=70px height="20px" alt="">
-                                <p class="text-success e">Meilleures pâtes</p>  <p class="re">Lorem ipsum sit amet consectetur adipiscing</p>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/noodles.png" class="img-fluid rond " width=70px height="20px" alt="">
-                                <p class="text-success e ">Nouilles</p> <p class="re">Lorem ipsum sit amet consectetur adipiscing</p>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/cake.png" class="img-fluid fo rond mt-2 " width=65px height="20px" alt="">
-                                <p class="text-success e">Cake</p>  <p class="re">Lorem ipsum sit amet consectetur adipiscing</p>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/salad.png" class="img-fluid  rond" width=80px height="20px" alt="">
-                                <p class="text-success e mb-1">Salade Grecque</p> <span class="re">Lorem ipsum sit amet consectetur adipiscing</span>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/caesar.png" class="img-fluid  rond mt-3" width=60px height="20px" alt="">
-                                <p class="text-success e mb-2">Salade César</p>  <span class="re">Lorem ipsum sit amet consectetur adipiscing</span>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <img src="/image/bread-barrel.png" class="img-fluid fo rond mt-3 " width=60px height="20px" alt="">
-                                <p class="text-success e">Baril de pain</p>  <p class="re">Lorem ipsum sit amet consectetur adipiscing</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <section class="pt-5" id="chef" data-aos="fade-up">
                 <div class="container">
-                    <h2>CHEF</h2>
+                    <h2 class="text-center">CHEF</h2>
                     <hr>
                     <div class="row d-flex justify-content-center align-items">
                         <div class="col-md-4 col-sm-12">
@@ -194,7 +215,7 @@
             </section>
             <section class="pt-5" id="gallery" data-aos="zoom-in" >
                 <div class="container">
-                    <h2>GALERIE</h2>
+                    <h2 class="text-center">GALERIE</h2>
                     <hr>
                     <div class="row d-flex justify-content-center align-items-center gap-3">
                         <div class="col-md-3 col-sm-12">
@@ -211,7 +232,7 @@
             </section>
             <section class="pt-5" id="table" data-aos="fade-up" id="table">
                 <div class="container">
-                    <h2>RESERVER UN TABLE</h2>
+                    <h2 class="text-center">RESERVER UN TABLE</h2>
                     <hr>
                     <div class="row d-flex align-items-center">
                         <div class="col-sm-12 col-md-4">
@@ -241,25 +262,9 @@
                     <button class="btn btn-success text-dark ex mt-3">Résérver Table</button>
                 
             </section>
-            <section class="pt-5" id="propos" data-aos="fade-up">
-                <div class="container">
-                    <h2>A PROPOS</h2>
-                    <hr>
-                    <div class="row d-flex justify-content-center align-items">
-                        <div class="col-md-4 col-sm-12">
-                            <img src="/image/about.png" class="img-fluid" width="350px " height="60px" alt="">
-                        </div>
-                        <div class="col-md-8 col-sm-12 text-sm-center">
-                            <p class="text-start nh">Bienvenue! Plongez dans un univers où la gastronomie se marie à l’élégance. Ici, chaque plat est une œuvre d'art, chaque saveur une invitation au voyage. Notre chef, avec son talent inégalé, sélectionne avec soin les ingrédients les plus frais pour vous offrir une expérience culinaire inoubliable. Que ce soit pour un dîner romantique, une sortie en famille ou un déjeuner d'affaires, Ce restaurant s'engage à rendre chaque moment unique. Venez découvrir notre menu exquis et laissez-vous emporter par une symphonie de goûts et de parfums.
-                            </p>
-                            <button class="btn btn-success d-block btn-md" type="button">En Savoir Plus</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section class="pt-5" id="contact" data-aos="fade-up">
                 <div class="container">
-                    <h2>CONTACT</h2>
+                    <h2 class="text-center">CONTACT</h2>
                     <hr>
                     <div class="row d-flex align-items-center ">
                         <div class="col-md-4">

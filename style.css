@@ -20,6 +20,15 @@ body {
     font-weight: 600;
     
 }
+.ee {
+    width: 100%; /* Remplir la carte */
+    height: 200px; /* Ajuster la hauteur */
+    object-fit: cover; /* Éviter la déformation */
+}
+.plats{
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .nav-link{
     font-weight: 600;
     color: #656D78;
