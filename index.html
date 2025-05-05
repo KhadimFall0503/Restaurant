@@ -18,37 +18,59 @@
                 <i class="fas fa-utensils"></i> Restaurant
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon text-white"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#delices">Délices</a></li>
-                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#chef">Chef</a></li>
-                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#gallery">Galerie</a></li>
-                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#propos">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link  fw-semibold" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#about">À propos</a></li>
+    
+                    <!-- Dropdown intégré sous "Délices" -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" id="delicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Délices
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#notes">Mieux Notés</a></li>
+                            <li><a class="dropdown-item" href="#plats">Plats principaux</a></li>
+                            <li><a class="dropdown-item" href="#desserts">Desserts</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#chef">Chef</a></li>
+    
+                    <!-- Dropdown Galerie -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown">
+                            Galerie
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#photos">Photos</a></li>
+                            <li><a class="dropdown-item" href="#videos">Vidéos</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#contact">Contact</a></li>
                 </ul>
-                <button class="btn btn-success px-4 py-2 rounded-pill">Réserver Table</button>
+                <a  href="#table" class="btn btn-success px-4 py-2 rounded-pill">Réserver Table</a>
             </div>
         </div>
     </nav>
-    
-    <section class="heros" style="height:70vh;">
+    <section class="heros" style="height:70vh;" id="home">
         <div class="fond d-flex justify-content-center align-items-center text-center">
             <div class="container">
-                <h1 class="fw-bold text-white">Profitez de votre Nourriture  Saine et Délicieuse !</h1>
-                <p class="mt-3 text-white text-center">Bienvenue dans notre restaurant ! Profitez d’une cuisine saine et savoureuse, <br> servie avec soin dans une ambiance chaleureuse et conviviale.</p>
+                <h1 class="fw-bold text-white">Savourez une cuisine saine et délicieuse !</h1>
+                <p class="mt-3 text-white text-center">Bienvenue ! Profitez d’une cuisine saine et délicieuse.</p>
+                <button class="btn btn-success px-4 py-2 rounded-pill mt-3">Réserver une table</button>
             </div>
         </div>
     </section>
-        <section class="about pt-3 " id="about" data-aos="fade-up">
+        <section class="about pt-5 " id="about" data-aos="fade-up" id="about">
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center pt-5">
                     <div class="col-md-7">
                         <h2 class="text-uppercase">à propos</h2>
-                        <p class="text-sm">Bienvenue! Plongez dans un univers où la gastronomie se marie à l’élégance. Ici, chaque plat est une œuvre d'art, chaque saveur une invitation au voyage. Notre chef, avec son talent inégalé, sélectionne avec soin les ingrédients les plus frais pour vous offrir une expérience culinaire inoubliable. Que ce soit pour un dîner romantique, une sortie en famille ou un déjeuner d'affaires, Ce restaurant s'engage à rendre chaque moment unique. Venez découvrir notre menu exquis et laissez-vous emporter par une symphonie de goûts et de parfums.
+                        <p class="text-sm">Bienvenue dans un univers où la gastronomie devient une véritable expérience sensorielle. Ici, chaque plat raconte une histoire, chaque bouchée vous transporte dans un voyage de saveurs raffinées. Notre chef, passionné et créatif, sélectionne avec exigence les ingrédients les plus frais pour composer des mets qui éveillent les sens. 
                         </p>
                         <!--<button class="btn btn-success d-block btn-md" type="button">En Savoir Plus</button> --> 
                     </div>
@@ -59,7 +81,7 @@
             </div>
        
     </section><br><br>
-        <section id="delices" class="delices pt-3 " data-aos="fade-up">
+        <section id="delices" class="delices pt-5 " data-aos="fade-up">
             <div class="container">
                 <div class="text-center">
                     <h2 class="text-center text-uppercase" >Délices</h2>
@@ -111,7 +133,7 @@
                             </div>
                         </div>
                        
-                        <h2 class="text-center text-uppercase pt-5">Les Mieux Notés</h2>
+                        <h2 class="text-center text-uppercase pt-5" id="notes">Les Mieux Notés</h2>
                         <hr>
                         <div class="row d-flex justify-content-center align-items-center g-3 flex-wrap">
                             <div class="col-12 col-md-4">
@@ -121,7 +143,7 @@
                                         <i class="fa-solid fa-utensils"></i>  25000 FCFA
                                     </span>
                                     <div class="card-body">
-                                        <h5 class="card-title">Pizza</h5>
+                                        <h5 class="card-title">Poulet</h5>
                                         <p class="card-text">Idéal pour un groupe de personners.</p>
                                         <a href="#" class="btn btn-success">Commander</a>
                                     </div>
@@ -134,7 +156,7 @@
                                         <i class="fa-solid fa-utensils"></i>  25000 FCFA
                                     </span>
                                     <div class="card-body">
-                                        <h5 class="card-title">Pizza</h5>
+                                        <h5 class="card-title">Brochettes</h5>
                                         <p class="card-text">Idéal pour un groupe de personners.</p>
                                         <a href="#" class="btn btn-success">Commander</a>
                                     </div>
@@ -207,62 +229,87 @@
                             <img src="image/chef.png" class="img-fluid rounded" width="350px " height="60px" alt="">
                         </div>
                         <div class="col-md-8 col-sm-12 text-sm-center">
-                            <h2 class="text-success text-start ">Mr Chef</h2>
-                            <p class="text-start nh">Le chef de ce restaurant est un virtuose du goût et un gardien des traditions culinaires. En cuisine, il combine savoir-faire ancestral avec une touche d'innovation moderne. Ayant passé des années à perfectionner ses techniques à travers les meilleures écoles de cuisine et les plus prestigieux restaurants, ses créations sont un témoignage de sa passion inébranlable pour la gastronomie. Chacune de ses compositions résume un voyage sensoriel, où les épices locales dansent avec des influences internationales. Dévoué à la fraîcheur et à la qualité, il soigne chaque détail, du choix des ingrédients à la finition élégante des plats. Son sourire chaleureux et son enthousiasme communicatif font de chaque repas une célébration de la culture sénégalaise et de l'art culinaire.
+                            <p class="mt-3">
+                                Derrière chaque plat raffiné se cache l'expertise et la passion de notre chef. 
+                                Fort d’une expérience incomparable, il allie créativité et savoir-faire pour sublimer 
+                                chaque ingrédient et créer des assiettes qui éveillent les sens.
                             </p>
+                            <p>
+                                Sélectionnant les produits les plus frais et de la meilleure qualité, il transforme 
+                                chaque recette en une œuvre d’art culinaire. Sa maîtrise des saveurs et des textures 
+                                garantit une expérience gastronomique unique.
+                            </p>
+                        
+
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="pt-5" id="gallery" data-aos="zoom-in" >
+            <section class="pt-5"  data-aos="zoom-in" id="photos">
                 <div class="container">
                     <h2 class="text-center">GALERIE</h2>
                     <hr>
-                    <div class="row d-flex justify-content-center align-items-center gap-3">
-                        <div class="col-md-3 col-sm-12">
-                            <img src="image/r1.png" class="img-fluid em "  alt="">
+                    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/r1.png" class="d-block w-75 mx-auto" alt="Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/r2.png" class="d-block w-75 mx-auto" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/r3.png" class="d-block w-75 mx-auto" alt="Image 3">
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-12 ">
-                            <img src="image/r2.png" class="img-fluid em"  alt="">
-                        </div>
-                        <div class="col-md-3 col-sm-12 ">
-                            <img src="image/r3.png" class="img-fluid em"  alt="">
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
             </section>
             <section class="pt-5" id="table" data-aos="fade-up" id="table">
                 <div class="container">
-                    <h2 class="text-center">RESERVER UN TABLE</h2>
-                    <hr>
-                    <div class="row d-flex align-items-center">
+                    <h2 class="text-center text-uppercase fw-bold">Réserver une Table</h2>
+                    <hr class="mb-4">
+                    <div class="row g-4">
                         <div class="col-sm-12 col-md-4">
                             <div class="form-group">
-                                <input type="text" name="Prénom" placeholder="Prénom" class="form-control">
-                                <input type="date" name="Date" placeholder="mm/dd/yyyy" class="form-control">
+                                <input type="text" name="Prénom" placeholder="Prénom" class="form-control rounded-pill shadow-sm p-3">
+                                <input type="date" name="Date" class="form-control rounded-pill shadow-sm p-3 mt-3">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <div class="form-group">
-                                <input type="email" name="Email" placeholder="Email" class="form-control">
-                                <input type="time" name="time" placeholder="mm/dd/yyyy" class="form-control">
+                                <input type="email" name="Email" placeholder="Email" class="form-control rounded-pill shadow-sm p-3">
+                                <input type="time" name="time" class="form-control rounded-pill shadow-sm p-3 mt-3">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <div class="form-group">
-                                <input type="tel" name="Téléphone" placeholder="Téléphone" class="form-control">
-                                <input type="number" placeholder="Code Postal" class="form-control">
+                                <input type="tel" name="Téléphone" placeholder="Téléphone" class="form-control rounded-pill shadow-sm p-3">
+                                <input type="number" placeholder="Code Postal" class="form-control rounded-pill shadow-sm p-3 mt-3">
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid" data-aos="fade-up">
-                        <div class="row">
-                            <textarea name="" id="" class="form-control">Message</textarea>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <textarea name="Message" placeholder="Message" class="form-control rounded shadow-sm p-3" rows="4"></textarea>
                         </div>
                     </div>
-                    <button class="btn btn-success text-dark ex mt-3">Résérver Table</button>
-                
-            </section>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-success px-5 py-3 rounded-pill shadow-lg fw-bold text-uppercase" type="submit">
+                            Valider la Réservation
+                        </button>
+                        <p class="mt-3 text-secondary">Vous recevrez une confirmation par email après la réservation.</p>
+                        <div class="mt-4 d-flex justify-content-center gap-3"></div>
+                            <a href="#menu" class="btn btn-outline-success px-4 py-2 rounded-pill">Voir le Menu</a>
+                            <a href="#contact" class="btn btn-outline-primary px-4 py-2 rounded-pill">Nous Contacter</a>
+                        </div>
+                    </div>
+                </div>
             <section class="pt-5" id="contact" data-aos="fade-up">
                 <div class="container">
                     <h2 class="text-center">CONTACT</h2>
@@ -283,7 +330,7 @@
                             <textarea name="Message" placeholder="Message" class="form-control"></textarea>
                         </div>
                     </div>
-                    <button class="btn btn-success text-dark ex mt-3">Message</button>
+                    <button class="btn btn-success text-white ex mt-3">Message</button>
                 </div>
             </section>
             
