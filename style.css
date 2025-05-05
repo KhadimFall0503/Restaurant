@@ -221,6 +221,11 @@ textarea{
 .heros {
     margin-top: 0; /* Supprime la marge supérieure de la section heros */
 }
+#menu {
+    background: linear-gradient(to bottom, #28a745, #ffffff); /* Dégradé du vert au blanc */
+    color: black; /* Texte bien lisible sur le fond */
+    padding: 60px 0; /* Espacement du contenu */
+}
 
 /* Boutons */
 .btn-success {
